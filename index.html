@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive Forward - Dedicated Business Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333; /* Softer dark gray for body text */
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        .contact-bg {
+            background-color: #f9fafb; /* Lighter background for contact section */
+        }
+        .contact-form-card {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+        }
+        /* Custom lime green color palette */
+        .text-lime-green {
+            color: #8CB72F; /* Slightly darker lime green */
+        }
+        .bg-lime-green {
+            background-color: #8CB72F; /* Slightly darker lime green */
+        }
+        .hover\:bg-dark-lime-green:hover {
+            background-color: #6B9024; /* Even darker for hover */
+        }
+        .focus\:ring-lime-green:focus {
+            box-shadow: 0 0 0 3px rgba(140, 183, 47, 0.4); /* Adjusted focus ring */
+        }
+        .hover\:text-lime-green:hover {
+            color: #6B9024; /* Darker lime green for text hover */
+        }
+        .text-light-lime-green {
+            color: #A5CD39; /* Original lime green for lighter accents */
+        }
+
+        /* General shadow and border radius improvements */
+        .rounded-xl {
+            border-radius: 1.25rem; /* Slightly larger border-radius for softer corners */
+        }
+        .shadow-md {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+        .shadow-lg {
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        }
+        .shadow-xl {
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+        }
+        .hover\:shadow-2xl:hover {
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header Section -->
+    <header id="header" class="bg-white shadow-lg fixed w-full top-0 z-50 rounded-b-2xl">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex flex-col items-center text-gray-800">
+                <img src="images/logo15.png" alt="Drive Forward Logo" class="h-20 mb-2">
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#main-services-cards" class="text-gray-600 hover:text-lime-green font-medium transition duration-300">Services</a>
+                <a href="#why-choose-us" class="text-gray-600 hover:text-lime-green font-medium transition duration-300">Why Choose Us?</a>
+                <a href="#about" class="text-gray-600 hover:text-lime-green font-medium transition duration-300">About Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-lime-green font-medium transition duration-300">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden md:inline-block bg-lime-green text-white font-semibold px-6 py-3 rounded-xl hover:bg-dark-lime-green transition duration-300 transform hover:scale-105 animate-bounce">
+                Get Started
+            </a>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 bg-white">
+            <a href="#main-services-cards" class="block py-3 text-gray-700 hover:text-lime-green font-medium">Services</a>
+            <a href="#why-choose-us" class="block py-3 text-gray-700 hover:text-lime-green font-medium transition duration-300">Why Choose Us?</a>
+            <a href="#about" class="block py-3 text-gray-700 hover:text-lime-green font-medium">About Us</a>
+            <a href="#contact" class="block py-3 text-gray-700 hover:text-lime-green font-medium">Contact</a>
+            <a href="#contact" class="block mt-4 bg-lime-green text-white text-center font-semibold px-6 py-3 rounded-xl hover:bg-dark-lime-green transition duration-300 ">Get Started</a>
+        </div>
+    </header>
+
+    <main class="pt-40">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-gray-50 to-stone-100 text-gray-900 py-24 mx-4 my-8 rounded-2xl shadow-lg">
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 text-gray-900">Empowering Your Business, <br class="hidden md:inline">Driving Your Success</h1>
+                <p class="text-xl md:text-2xl text-gray-700 mb-10 max-w-4xl mx-auto leading-relaxed">Dedicated business support to streamline your operations and help you <span class="font-extrabold text-lime-green">Drive Forward</span> with confidence.</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#main-services-cards" class="bg-lime-green text-white font-bold px-10 py-4 rounded-xl hover:bg-dark-lime-green transition duration-300 transform hover:scale-105 animate-bounce">Our Services</a>
+                    <a href="#contact" class="bg-gray-200 text-gray-800 font-semibold px-10 py-4 rounded-xl hover:bg-gray-300 transition duration-300 transform hover:scale-105 shadow-lg">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for the three main service cards -->
+        <section id="main-services-cards" class="py-20 bg-white rounded-2xl mx-4 lg:mx-auto lg:max-w-7xl px-4 sm:px-6 lg:px-8 my-8 shadow-lg">
+            <div class="container mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-16">Streamlined Business Solutions</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div id="admin-card" class="bg-gray-50 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2">
+                        <div class="flex items-center mb-6">
+                            <svg class="w-12 h-12 text-lime-green mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75c0-.231-.035-.454-.1-.664M6.75 7.5h10.5a2.25 2.25 0 012.25 2.25v7.5a2.25 2.25 0 01-2.25-2.25v-7.5a2.25 2.25 0 012.25-2.25z" />
+                            </svg>
+                            <h3 class="text-3xl font-bold text-gray-900">Business Services</h3>
+                        </div>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Let <span class="font-bold text-lime-green">Drive Forward</span> handle the paperwork. Our business services streamline your processes, saving you time and money, and helping you <span class="font-extrabold text-lime-green">drive your business forward</span>.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Scheduling & Coordination</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Quote & Invoice Management</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Dedicated Client Support</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Compliance & Documentation</li>
+                        </ul>
+                    </div>
+                    <div id="how-we-approach-success-card" class="bg-gray-50 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2" data-target="how-we-approach-success-details">
+                        <div class="flex items-center mb-6">
+                            <svg class="w-12 h-12 text-lime-green mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L13.5 21.75 16.5 12h-8.25L3.75 13.5z" />
+                            </svg>
+                            <h3 class="text-3xl font-bold text-gray-900">Our Approach to Success</h3>
+                        </div>
+                        <p class="text-gray-700 mb-6 leading-relaxed">At <span class="font-bold text-lime-green">Drive Forward</span>, our guiding principles ensure every service we provide is rooted in excellence, reliability, and client satisfaction, helping you <span class="font-extrabold text-lime-green">drive forward</span> with confidence.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Client-Centric Focus</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Unwavering Reliability</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Local Expertise, Digital Reach</li>
+                        </ul>
+                    </div>
+                    <div id="consulting-card" class="bg-gray-50 rounded-2xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 cursor-pointer transform hover:-translate-y-2" data-target="consulting-details">
+                        <div class="flex items-center mb-6">
+                            <svg class="w-12 h-12 text-lime-green mr-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 0a2.25 2.25 0 002.25 2.25h12c1.242 0 2.25-.901 2.25-2.025m-16.5 0a2.25 2.25 0 012.25-2.25h12c1.242 0 2.25.901 2.25 2.025M12 6.75V11.25m0 0l3-3m-3 3l-3-3" />
+                            </svg>
+                            <h3 class="text-3xl font-bold text-gray-900">Specialized Consulting & Advisory</h3>
+                        </div>
+                        <p class="text-gray-700 mb-6 leading-relaxed">Leverage our deep industry knowledge to optimize your operations. We provide strategic advice and practical solutions to help you <span class="font-extrabold text-lime-green">drive forward</span> through your unique business challenges.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Process Optimization</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Efficiency Audits</li>
+                            <li class="flex items-center"><svg class="w-6 h-6 text-lime-green mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Regulatory Guidance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Details Section -->
+        <section id="admin-details" class="py-20 bg-white rounded-2xl shadow-xl mx-4 sm:mx-6 lg:mx-8 relative z-20 hidden my-8">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <button id="back-to-services-admin" class="mb-10 px-6 py-3 bg-gray-200 text-gray-700 rounded-xl hover:bg-gray-300 transition duration-300 flex items-center font-medium">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Services
+                </button>
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">Our Professional Business Services to <span class="font-bold text-lime-green">Drive Your Business Forward</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-book animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Bookkeeping</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Accurate and efficient management of your financial records, ensuring compliance and providing clear insights to help you <span class="font-extrabold text-lime-green">drive financial clarity</span>.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-money-check-alt animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Payroll Services</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Ensure accurate and timely payroll processing, including wage calculations, tax deductions, and compliance with all relevant regulations, allowing you to focus on your team and <span class="font-extrabold text-lime-green">drive operational smoothness</span>.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-laptop animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Xero Software</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Specialized expertise in Xero Software, providing setup, ongoing management, and optimization to streamline your financial processes and <span class="font-extrabold text-lime-green">drive efficiency</span> for small to medium-sized businesses.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-envelope-open-text animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Email Support</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Professional handling of your inbox, drafting responses, filtering important messages, and ensuring timely communication to <span class="font-extrabold text-lime-green">drive client relations</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Approach Details Section -->
+        <section id="how-we-approach-success-details" class="py-20 bg-white rounded-2xl shadow-xl mx-4 sm:mx-6 lg:mx-8 relative z-20 hidden my-8">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <button id="back-to-services-approach" class="mb-10 px-6 py-3 bg-gray-200 text-gray-700 rounded-xl hover:bg-gray-300 transition duration-300 flex items-center font-medium">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Services
+                </button>
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">Our Core Principles for Your Success</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-user-friends animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Client-Centric Focus</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Your business goals are our priority. We listen, understand your unique needs, and tailor our services to provide solutions that truly <span class="font-extrabold text-lime-green">drive your success</span>.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-hands-helping animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Unwavering Reliability</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">We pride ourselves on consistency and dependability. From accurate business support to proactive solutions, you can always count on <span class="font-bold text-lime-green">Drive Forward</span> to deliver on our promises.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-globe-americas animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Local Expertise, Digital Reach</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Based in Kumeū, we combine local knowledge with the power of digital tools to provide efficient solutions that help your business <span class="font-extrabold text-lime-green">drive forward</span>.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-comments animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Transparency & Communication</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">We believe in clear, open communication. You'll always be informed with clear explanations of our business processes, helping you to <span class="font-extrabold text-lime-green">drive forward</span> with full understanding.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-lightbulb animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Efficiency & Innovation</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Continuously seeking ways to optimize our operations and embrace new technologies, we ensure our services are as efficient and effective as possible, saving you time and resources to <span class="font-extrabold text-lime-green">drive your business forward</span>.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-shield-alt animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Security & Compliance</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Adhering to the highest industry standards, we ensure that all operations are conducted with utmost security and in full compliance with regulations, giving you peace of mind as you <span class="font-extrabold text-lime-green">drive forward</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Consulting Details Section -->
+        <section id="consulting-details" class="py-20 bg-white rounded-2xl shadow-xl mx-4 sm:mx-6 lg:mx-8 relative z-20 hidden my-8">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <button id="back-to-services-consulting" class="mb-10 px-6 py-3 bg-gray-200 text-gray-700 rounded-xl hover:bg-gray-300 transition duration-300 flex items-center font-medium">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Back to Services
+                </button>
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">Specialized Consulting & Advisory to <span class="font-bold text-lime-green">Drive Your Business Forward</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-cogs animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Process Optimization</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Identify inefficiencies and implement smarter workflows. We'll help you streamline your business processes to maximize productivity and <span class="font-extrabold text-lime-green">drive operational excellence</span>.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-chart-line animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Efficiency Audits</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Comprehensive reviews of your current business practices to pinpoint areas for improvement. Our insights will help you <span class="font-extrabold text-lime-green">drive cost savings</span> and enhance overall effectiveness.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-balance-scale animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Regulatory Guidance</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Navigate complex regulations with ease. We provide expert advice to ensure your business practices are compliant, helping you to <span class="font-extrabold text-lime-green">drive forward</span> without legal concerns.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-project-diagram animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Technology Integration Consulting</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Advice on selecting and integrating the best business software and tools for your business, including Xero Business Software, to <span class="font-extrabold text-lime-green">drive your digital transformation</span>.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl text-center mb-8">
+                            <i class="fas fa-brain animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Strategic Planning Support</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Assist in developing strategic plans for your business functions, ensuring they align with your overall business objectives and help you to <span class="font-extrabold text-lime-green">drive forward</span> with a clear vision.</p>
+                    </div>
+                    <div class="bg-gray-50 p-10 rounded-2xl shadow-lg hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8 text-center">
+                            <i class="fas fa-shield-alt animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4 text-center">Security & Compliance</h3>
+                        <p class="text-gray-700 text-center leading-relaxed">Adhering to the highest industry standards, we ensure that all operations are conducted with utmost security and in full compliance with regulations, giving you peace of mind as you <span class="font-extrabold text-lime-green">drive forward</span>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="py-20 bg-gray-100 mx-4 my-8 rounded-2xl shadow-lg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800">Why Choose <span class="font-bold text-lime-green">Drive Forward</span>?</h2>
+                    <p class="text-lg md:text-xl text-gray-700 mt-4 max-w-3xl mx-auto leading-relaxed">Partner with us and experience the difference dedicated, expert business support can make in <span class="font-extrabold text-lime-green">driving your business forward</span>.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8">
+                            <i class="fas fa-check-circle animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Unmatched Expertise</h3>
+                        <p class="text-gray-700 leading-relaxed">Years of experience in business management ensures we bring best practices and insightful solutions to your business.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8">
+                            <i class="fas fa-clock animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Time & Cost Savings</h3>
+                        <p class="text-gray-700 leading-relaxed">Outsource your business tasks and free up valuable time and resources, allowing you to focus on growth.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8">
+                            <i class="fas fa-handshake animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Personalized Support</h3>
+                        <p class="text-gray-700 leading-relaxed">We work closely with you to understand your specific needs, providing tailored business solutions.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8">
+                            <i class="fas fa-lightbulb animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Enhanced Efficiency</h3>
+                        <p class="text-gray-700 leading-relaxed">Our streamlined processes and adoption of modern tools ensure maximum efficiency in all business tasks.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8">
+                            <i class="fas fa-lock animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Data Security & Privacy</h3>
+                        <p class="text-gray-700 leading-relaxed">We prioritize the security and confidentiality of your business data with robust protocols.</p>
+                    </div>
+                    <div class="bg-white rounded-2xl p-10 shadow-lg flex flex-col items-center text-center hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+                        <div class="text-lime-green text-6xl mb-8">
+                            <i class="fas fa-award animate-bounce"></i>
+                        </div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Reliable & Consistent Service</h3>
+                        <p class="text-gray-700 leading-relaxed">Count on us for consistent, high-quality service that helps you <span class="font-extrabold text-lime-green">drive forward</span> without interruption.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white mx-4 my-8 rounded-2xl shadow-lg">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <img src="images/logo13.png" alt="About Drive Forward" class="rounded-2xl shadow-xl">
+                </div>
+                <div class="text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-8">About <span class="font-bold text-lime-green">Drive Forward</span></h2>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        At <span class="font-bold text-lime-green">Drive Forward</span>, we believe that efficient business is the backbone of any successful business. Founded in Kumeū, Auckland, we recognized the growing need for specialized business support that allows businesses to focus on their core competencies and truly <span class="font-extrabold text-lime-green">drive forward</span>.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        Our team is dedicated to providing meticulous, reliable, and tailored business solutions. From managing your daily operations to offering strategic consulting, we are committed to helping your business thrive. We integrate seamlessly with your existing processes, becoming an extension of your team, ensuring you have the support you need to reach your goals.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Choose <span class="font-bold text-lime-green">Drive Forward</span> to handle the details, so you can focus on the big picture. Let's <span class="font-extrabold text-lime-green">drive your business forward</span>, together.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 contact-bg mx-4 my-8 rounded-2xl shadow-lg">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Ready to <span class="font-extrabold text-lime-green">Drive Forward</span>?</h2>
+                <p class="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+                    Get in touch today to discuss how our business services can help streamline your operations and empower your business. We're here to help you succeed.
+                </p>
+                <div class="max-w-xl mx-auto contact-form-card rounded-2xl p-10 md:p-12">
+                    <h3 class="text-3xl font-bold text-gray-800 mb-8">Send Us a Message</h3>
+                    <form name="contact" method="POST" action="thanks.html" data-netlify="true" class="space-y-6">
+                    <input type="hidden" name="form-name" value="contact">
+                    <input type="text" name="bot-field" style="display: none;">
+                    <div class="mb-5">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-3 focus:ring-lime-green transition duration-200 text-lg" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-3 focus:ring-lime-green transition duration-200 text-lg" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="phone" class="sr-only">Phone</label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g., 0211234567 or 091234567" pattern="^0(2[0-9]{7,9}|[3-46-79][0-9]{7})$" title="Please enter a valid New Zealand phone number (e.g., 0211234567, 091234567)" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-3 focus:ring-lime-green transition duration-200 text-lg" required>
+                    </div>
+                    <div class="mb-5">
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" name="message" rows="7" placeholder="How can we help you drive forward?" class="w-full p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-3 focus:ring-lime-green transition duration-200 text-lg" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-lime-green text-white font-bold py-4 rounded-xl hover:bg-dark-lime-green transition duration-300 transform hover:scale-105 text-xl animate-bounce">Send Message</button>
+                </form>
+                </div>
+                <div class="mt-16 flex justify-center space-x-8 text-gray-700">
+                    <a href="tel:+640221573481" class="hover:text-lime-green transition duration-300 text-4xl"><i class="fas fa-phone"></i></a>
+                    <a href="mailto:driveforward@outlook.co.nz" class="hover:text-lime-green transition duration-300 text-4xl"><i class="fas fa-envelope"></i></a>
+                   <!-- <a href="" target="_blank" class="hover:text-lime-green transition duration-300 text-4xl"><i class="fab fa-facebook"></i></a>-->
+                    <a href="https://x.com/driveforward0" target="_blank" class="hover:text-lime-green transition duration-300 text-4xl"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/driveforward0/" target="_blank" class="hover:text-lime-green transition duration-300 text-4xl"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-gray-300 py-12 rounded-t-2xl mx-4 my-8 shadow-lg">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-base">
+            <div class="flex items-center mb-8 md:mb-0">
+                <img src="images/logo15.png" alt="Drive Forward Logo" class="h-20 mr-6">
+            </div>
+            <div class="text-center md:text-right">
+                <p class="text-lg">&copy; 2025 <span class="font-bold text-lime-green">Drive Forward</span>. All rights reserved.</p>
+                <p class="mt-3 text-gray-400">Based in Auckland, New Zealand</p>
+                <div class="mt-6 flex justify-center md:justify-end space-x-6">
+                    <a href="privacy.html" class="text-gray-400 hover:text-white transition duration-300 font-medium">Privacy Policy</a>
+                    <a href="terms.html" class="text-gray-400 hover:text-white transition duration-300 font-medium">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        /**
+         * Hides all detail sections and reveals the specified target section.
+         * Scrolls the page to the top of the newly visible section.
+         * @param {string} targetId The ID of the detail section to show.
+         */
+        function showDetailSection(targetId) {
+            const sections = document.querySelectorAll('section[id$="-details"]');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
+            document.getElementById(targetId).classList.remove('hidden');
+            document.getElementById('main-services-cards').classList.add('hidden'); // Hide the main cards container
+            document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Explicitly attach click listeners to each service card to ensure correct navigation.
+        document.getElementById('admin-card').addEventListener('click', () => {
+            showDetailSection('admin-details');
+        });
+
+        document.getElementById('how-we-approach-success-card').addEventListener('click', () => {
+            showDetailSection('how-we-approach-success-details');
+        });
+
+        document.getElementById('consulting-card').addEventListener('click', () => {
+            showDetailSection('consulting-details');
+        });
+
+        // Event listeners for "Back to Services" buttons
+        document.getElementById('back-to-services-admin').addEventListener('click', () => {
+            document.getElementById('admin-details').classList.add('hidden');
+            document.getElementById('main-services-cards').classList.remove('hidden'); // Show main cards
+            document.getElementById('main-services-cards').scrollIntoView({ behavior: 'smooth' }); // Scroll to main cards
+        });
+
+        document.getElementById('back-to-services-approach').addEventListener('click', () => {
+            document.getElementById('how-we-approach-success-details').classList.add('hidden');
+            document.getElementById('main-services-cards').classList.remove('hidden'); // Show main cards
+            document.getElementById('main-services-cards').scrollIntoView({ behavior: 'smooth' }); // Scroll to main cards
+        });
+
+        document.getElementById('back-to-services-consulting').addEventListener('click', () => {
+            document.getElementById('consulting-details').classList.add('hidden');
+            document.getElementById('main-services-cards').classList.remove('hidden'); // Show main cards
+            document.getElementById('main-services-cards').scrollIntoView({ behavior: 'smooth' }); // Scroll to main cards
+        });
+
+        // Smooth scrolling for main navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                // Hide all detail sections and show main services when navigating from the top bar.
+                document.getElementById('admin-details').classList.add('hidden');
+                document.getElementById('how-we-approach-success-details').classList.add('hidden');
+                document.getElementById('consulting-details').classList.add('hidden');
+                document.getElementById('main-services-cards').classList.remove('hidden');
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Initial state: ensure only main-services-cards are visible on load
+        window.addEventListener('load', () => {
+            document.getElementById('main-services-cards').classList.remove('hidden');
+            document.getElementById('admin-details').classList.add('hidden');
+            document.getElementById('how-we-approach-success-details').classList.add('hidden');
+            document.getElementById('consulting-details').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You! - Drive Forward</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom font: Inter, for consistency with main site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif; /* Changed to Inter for consistency */
+            scroll-behavior: smooth;
+        }
+        /* Custom lime green color */
+        .text-lime-green {
+            color: #A5CD39;
+        }
+        .bg-lime-green {
+            background-color: #A5CD39;
+        }
+        .hover\:bg-dark-lime-green:hover {
+            background-color: #8CB72F; /* A slightly darker shade for hover */
+        }
+        .focus\:ring-lime-green:focus {
+            box-shadow: 0 0 0 2px rgba(165, 205, 57, 0.5); /* Ring color with transparency */
+        }
+        .hover\:text-lime-green:hover {
+            color: #A5CD39;
+        }
+        .text-light-lime-green {
+            color: #C0E070; /* A lighter shade for contrast on dark backgrounds */
+        }
+        /* Subtle animation for the checkmark */
+        @keyframes pulse-check {
+            0% { transform: scale(0.9); opacity: 0.7; }
+            50% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(0.9); opacity: 0.7; }
+        }
+        .animate-pulse-check {
+            animation: pulse-check 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+
+    <!-- Header Section (Simplified from main site) -->
+    <header class="bg-stone-100 shadow-md fixed w-full top-0 z-50 rounded-b-xl">
+        <div class="container mx-auto flex justify-center items-center px-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="flex flex-col items-center space-y-0 text-2xl font-bold rounded-md p-2 transition duration-300">
+                <img src="images/logo14.png" alt="Drive Forward Logo" class="h-20 mb-2"> <!-- Updated logo source -->
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl shadow-lg p-8 md:p-12 text-center max-w-lg w-full border border-gray-100">
+            <div class="text-lime-green text-6xl mb-6"> <!-- Changed color to text-lime-green -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-20 h-20 mx-auto animate-pulse-check">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+            </div>
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Thank You for Contacting Us!</h1>
+            <p class="text-lg text-gray-600 mb-8">
+                Your message has been successfully received by <span class="font-bold text-lime-green">Drive Forward</span>. <!-- Changed color to text-lime-green -->
+                We appreciate you reaching out and will get back to you as soon as possible.
+            </p>
+            <a href="index.html" class="inline-block bg-lime-green text-white font-semibold px-8 py-3 rounded-full text-lg hover:bg-dark-lime-green transition duration-300 transform hover:scale-105 shadow-md">
+                Return to Homepage
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer Section (Simplified from main site) -->
+    <footer class="bg-gray-800 text-white py-6 rounded-t-lg">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>&copy; 2025 <span class="font-bold text-lime-green">Drive Forward</span>. All rights reserved.</p> <!-- Changed color to text-lime-green -->
+        </div>
+    </footer>
+
+</body>
+</html>
